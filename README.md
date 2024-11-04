@@ -1,3 +1,9 @@
-# bookbot
+# Bookbot python demo project
 
-## BookBot is my first project!
+## Bookbot to read texts and show info about it
+
+# Execution
+Run the fallowing command to execute:
+```bash
+  python3 main.py
+```
