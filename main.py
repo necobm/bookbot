@@ -1,14 +1,17 @@
 def main():
     with open("books/frankenstein.txt") as f:
         file_contents = f.read()
-    print(file_contents)
     words = word_count(file_contents)
-    print("***********************************************")
-    print(f"This text have {words} words")
+    print("--- Begin report of books/frankenstein.txt ---")
+    print(f"{words} words found in the document")
 
     chars = char_count(file_contents)
-    print("***********************************************")
-    print(f"Characters count: {chars}")
+
+    for char, count in chars.items():
+        print(f"The '{char}' character was found {count} times")
+
+    print("--- End report ---")
+
 
 def word_count(file_contents):
     words = file_contents.split()
